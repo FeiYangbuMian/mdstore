@@ -16,6 +16,8 @@
 
 选择根元素 :root
 
+​	css变量，自定义属性(--*)，使用var()
+
 选择空元素 :empty
 
 选择唯一的子代 :only-child  :only-of-type

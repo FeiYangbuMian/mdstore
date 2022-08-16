@@ -405,7 +405,17 @@ day.js+插件QuarterOfYear（季度）
 
 
 
-？`datazoom`的`type`属性`inside`和`slider`有什么区别
+`datazoom`的`type`属性`inside`和`slider`有什么区别
+
+​	inside可以对坐标系操作；slider有单独的滑动条
+
+> [内置型数据区域缩放组件（dataZoomInside）](https://echarts.apache.org/zh/option.html#dataZoom-inside)：内置于坐标系中，使用户可以在坐标系上通过鼠标拖拽、鼠标滚轮、手指滑动（触屏上）来缩放或漫游坐标系。
+>
+> [滑动条型数据区域缩放组件（dataZoomSlider）](https://echarts.apache.org/zh/option.html#dataZoom-slider)：有单独的滑动条，用户在滑动条上进行缩放或漫游。
+>
+> [框选型数据区域缩放组件（dataZoomSelect）](https://echarts.apache.org/zh/option.html#toolbox.feature.dataZoom)：提供一个选框进行数据区域缩放。即 [toolbox.feature.dataZoom](https://echarts.apache.org/zh/option.html#toolbox.feature.dataZoom)，配置项在 `toolbox` 中。
+
+
 
 ##### @pacvue/element-ui
 
@@ -430,6 +440,21 @@ vue拖拽组件
 #### TypeTable 对el-table的封装
 
 用到了el-table-column自定义列模板，+了分页
+
+```javascript
+<!--
+fetchFun // Function  { seachQuery , initPage = true , sortPageQuery }  获取 data的 函数 可选  自动处理分页与排序逻辑
+	 this.fetchFun(null, false/true, this.query) // 仅在页码、筛选时自动调用fetchFun
+
+属性query // Object { pageNum,pageSize,total,order orderBy } 集合分页与排序query 同步外部query参数
+
+// fetchFun 在this.searchQuery变化时 参一为searchQuery
+// fetchFun 在页码、每页数、排序筛选变化时 参一为null
+
+-->
+```
+
+
 
 
 

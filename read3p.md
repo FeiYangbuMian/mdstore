@@ -1,41 +1,3 @@
-## 英文
-
-```
-FBA 亚马逊物流 Fulfillment By Amazon
-FBM ? FPM? MAP?
-compliance ?
-ASIN 亚马逊产品唯一编号 Amazon standard identification number
-MSKU ?   SKU库存单位
-Avg. 平均
-pst 太平洋标准时间
-merchandising 推销
-inventory 详细目录
-allocation配给量
-remaining剩 余的
-promotion 促销   coupon 优惠券
-brand 品牌商标
-purchase购买
-reviews综述评论
-rating 评级 等级
-debounce防抖
-claim 索赔 Reimbursed偿还 Expired过期的
-currency 货币  currency symbol 货币符号
-shipment 运输；货物
-inbound 入境的；入站
-profitability  盈利能力；收益性；利益率
-YoY （Year Over Year）年同比
-restock 补充货源
-bullet point重点要点
-manufacturers 制造商
-rejected拒绝 fulfill 实现
-review 审查检查
-bull operation批量操作
-parentage 出身
-buybox 亚马逊黄金购物车
-```
-
-
-
 ## CSS
 
 ```css
@@ -460,17 +422,25 @@ fetchFun // Function  { seachQuery , initPage = true , sortPageQuery }  获取 d
 
 ## 规范
 
-#### git commit规范
+#### git commit规范（Angular规范
 
 fix: PCP-686 【asin detail page-reviews】列表加载中没有加载图标
 
-feat
-
-chore
-
-refactor
-
-doc等等
+> fix 修复bug
+>
+> feat 新功能(feature)
+>
+> refactor 重构（不是新增功能，也不是修改bug的代码变动
+>
+> style 格式（不影响代码运行变动，去空格改缩进删分号等
+>
+> docs 文档(documentation)
+>
+> test 增加测试
+>
+> chore 除src、test的修改，构建过程或辅助工具的变动
+>
+> http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
 
 账号：zhanghuizhen
 
@@ -487,4 +457,90 @@ axios的封装与使用，catch等捕获? await有try catch吗
 charts使用
 
 ->每个chart都写自己的option，动态变化legend的selected，与自定义的图例联动
+
+->datazoom的type已经搞清楚
+
+typeTable的fetchFun内容为何要定义在当前function的属性上
+
+model封装没看懂
+
+## 英文
+
+#### Amazon等相关
+
+```
+FBA 亚马逊物流 Fulfillment By Amazon
+FBM 卖家自发货 Fulfilment by merchant
+FPM? MAP? 货币单位
+ASIN 亚马逊产品唯一编号 Amazon standard identification number   
+SKU 库存单位 MSKU（海外仓库存，一般与SKU一致 FSKU? skus Stock-Keeping Units
+OOS 无库存 Out Of Stock
+pst 太平洋标准时间
+UPC 商品通用条码
+EAN 欧洲物品码
+buybox 亚马逊黄金购物车
+Est. 美国东部标准时间(=Eastern Standard Time)
+YoY （Year Over Year）年同比
+PoP?
+Avg. 平均
+walmat 沃尔玛
+sov 媒介投资占有率
+ASP 美国销售价格
+TACoS 总广告成本（衡量亚马逊PPC广告效果的标准
+AFN 平均故障数 MFN？
+```
+
+#### 单词
+
+```
+merchandising 推销
+inventory 库存
+ damage 损坏 return unsellable 卖不掉的
+allocation 配给量
+remaining 剩余的 remaining quota剩余配额
+promotion 促销   coupon 优惠券
+brand 品牌商标
+purchase 购买
+reviews 综述评论
+rating 评级 等级
+debounce防抖
+claim 索赔 Reimbursed偿还 Expired过期的
+currency 货币  currency symbol 货币符号
+shipment 运输；货物
+inbound 入境的；入站
+profitability  盈利能力；收益性；利益率
+restock 补充货源
+bullet point重点要点
+manufacturers 制造商
+rejected 拒绝 fulfill 实现
+review 审查检查
+parentage 出身
+manufacturer 生产商，制造商 vendor供应商
+sales 销售，销售额
+seller 卖方  retailer 零售商
+insight 了解
+discount 折扣 max discount
+abstract 概要；抽象的
+sponsored 赞助
+dimension 范围 
+budget 预算
+```
+
+#### 短语
+
+
+```
+bulk operation 批量操作
+item condition 物品情况
+fulfillment channel 实现通道（物流
+sales rank 销售排名
+competitor tracker 竞品追踪
+ranking trend 排名趋势
+search volume 搜索量
+Ad spend 广告支出
+replenishment advice 补充建议
+invoice defect 发票缺陷
+first time detected 首次检测时间
+discount detection 折扣检测
+```
 
